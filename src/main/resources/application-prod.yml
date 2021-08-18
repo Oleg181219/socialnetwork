@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://31.40.251.201:5432/javapro?user=javapro&password=iddqd
+    url: jdbc:postgresql:/
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL92Dialect
@@ -10,17 +10,17 @@ spring:
     generate-ddl: false
   liquibase:
     change-log: classpath:db.changelog/changes/db.changelog.xml
-    url: jdbc:postgresql://31.40.251.201:5432/javapro
-    user: javapro
-    password: iddqd
+    url: jdbc:postgresql://
+    user: 
+    password: 
     enabled: true
     contexts: prod
   mail:
-    address: http://31.40.251.201
+    address: 
     host: smtp.gmail.com
     port: 587
-    username: devSocialLine@gmail.com
-    password: ntcngjxnf12
+    username: 
+    password: 
     properties:
       mail:
         debug: true
@@ -40,8 +40,8 @@ logging:
   config: classpath:log4j2-spring-prod.xml
 
 # тут не трогать. это путь до хранилища на prod
-javapro.storagepath.baseurl: http://31.40.251.201:8086
-javapro.storagepath: /home/javapro/javapro-socialnetwork-studygroup-12
+javapro.storagepath.baseurl: http://
+javapro.storagepath:
 
 
 
