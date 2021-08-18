@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://31.40.251.201:5432/javapro_test?user=javapro&password=iddqd
+    url: 
     driver-class-name: org.postgresql.Driver
-    username: javapro
-    password: iddqd
+    username: 
+    password:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL92Dialect
     show-sql: false
@@ -11,9 +11,9 @@ spring:
       ddl-auto: none
     generate-ddl: false
   liquibase:
-    url: jdbc:postgresql://31.40.251.201:5432/javapro_test
-    user: javapro
-    password: iddqd
+    url: 
+    user: 
+    password: 
     enabled: true
     contexts: test
     change-log: classpath:db.changelog/db.changelog-master.yml
